@@ -1,0 +1,80 @@
+//@import "../commonstyle/adaptr.css";
+@import "../commonstyle/base.css";
+@import "../commonstyle/iconfont.css";
+@import "../commonstyle/variable.less";
+
+.norm-normIndex{
+  .post-closetime{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: none;
+    z-index: 199;
+  }
+  .base-bodys{
+    .base-title{
+      position: relative;
+      .post-posttime{
+        display: inline-block;
+        float: right;
+
+      }
+      .post-timeShow{
+        position: absolute;
+        width: 750/100rem;
+        height: 200/100rem;
+        background-color: #fff;
+        left:0;
+        top:87/100rem;
+        z-index: 200;
+        display: none;
+        padding-top: 20/100rem;
+        span{
+          display: block;
+          float: left;
+          width: 180/100rem;
+          height: 50/100rem;
+          line-height: 50/100rem;
+          text-align: center;
+          border: 1px dotted #979797;
+          margin: 20/100rem 20/100rem;
+        }
+      }
+    }
+
+    .post-normchart{
+      position: relative;
+      #post-norchart{
+        width: 680/100rem;
+        height: 486/100rem;
+        margin: 0 auto;
+      }
+
+      .post-markpoin{
+        position: absolute;
+        left: 450/100rem;
+        top: 30/100rem;
+        span{
+          width: 106/100rem;
+          display: inline-block;
+          height:14/100rem;
+          //border-top: 2/100rem dotted @red;
+          background: url("../../img/lineBg.png") no-repeat;
+          -webkit-background-size:100%;
+          background-size:100%;
+        }
+      }
+    }
+  }
+
+}
+#post-changepic{
+  width: 680/100rem;
+  height: 486/100rem;
+  margin: 0 auto;
+}
+.post-timeclick{
+  background-color: @red;
+  color: #ffffff;
+  border: 1px solid @red !important;
+}

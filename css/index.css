@@ -1,0 +1,85 @@
+@media only screen and (width: 320px) {
+  html {
+    font-size: 12.8px;
+  }
+}
+@media only screen and (width: 375px) {
+  html {
+    font-size: 15px;
+  }
+}
+@media only screen and (width: 400px) {
+  html {
+    font-size: 16px;
+  }
+}
+@media only screen and (width: 414px) {
+  html {
+    font-size: 16.56px;
+  }
+}
+@media only screen and (min-width: 650px) {
+  html {
+    font-size: 30px;
+  }
+}
+#pic1 {
+  min-width: 9.375rem;
+  min-height: 8.125rem;
+  float: left;
+}
+#line {
+  min-width: 17.1875rem;
+  min-height: 8.125rem;
+  margin: 0 auto;
+}
+.whols .title {
+  height: 2.1875rem;
+  line-height: 2.1875rem;
+  width: 100%;
+}
+.whols .title span {
+  float: left;
+  text-indent: 0.46875rem;
+}
+.whols .title a {
+  float: right;
+  margin-right: 0.46875rem;
+  text-decoration: none;
+  color: #424242;
+}
+.whols .title a i {
+  font-style: normal;
+  font-weight: 600;
+  color: #6a6a6a;
+}
+.whols .box1 {
+  width: 18.75rem;
+  height: 11.03125rem;
+  border-radius: 0.5rem;
+  background-color: #f7f7f7;
+  margin: 0.625rem auto;
+}
+.whols .box1 .shownumber {
+  width: 9.375rem;
+  height: 8.125rem;
+  line-height: 8.125rem;
+  float: left;
+  text-align: center;
+  font-size: 1.5rem;
+  color: #424242;
+}
+.whols .box2 {
+  width: 18.75rem;
+  height: 11.03125rem;
+  border-radius: 0.5rem;
+  background-color: #f7f7f7;
+  margin: 0.625rem auto;
+}
+.whols .box3 {
+  width: 18.75rem;
+  height: 11.03125rem;
+  border-radius: 0.5rem;
+  background-color: #f7f7f7;
+  margin: 0.625rem auto;
+}

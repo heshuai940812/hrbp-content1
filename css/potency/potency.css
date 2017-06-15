@@ -1,0 +1,61 @@
+.potency-whole .potency-body .potency-number {
+  width: 6.75rem;
+  height: 1.3rem;
+  line-height: 1.3rem;
+  text-align: center;
+}
+.potency-whole .potency-body .potency-number span {
+  font-size: 0.88rem;
+  font-weight: 900;
+  font-style: italic;
+  color: #343a46;
+}
+.potency-whole .potency-body .potency-picture #scatter {
+  width: 6.7rem;
+  height: 6.3rem;
+  margin: 0 auto;
+}
+.potency-whole .potency-body .potency-strip {
+  width: 6.4rem;
+  margin: 0 auto;
+  margin-top: 0.25rem;
+  height: 0.3rem;
+  line-height: 0.3rem;
+}
+.potency-whole .potency-body .potency-strip div {
+  width: 33%;
+  float: left;
+  color: #737373;
+  height: 0.3rem;
+  line-height: 0.3rem;
+  text-indent: 0.05rem;
+  font-size: 0.24rem;
+  margin-bottom: 0.15rem;
+}
+.potency-whole .potency-body .potency-strip div span {
+  display: block;
+  float: left;
+  width: 0.24rem;
+  height: 0.24rem;
+  margin-top: 0.02rem;
+  margin-left: 0.15rem;
+  border-radius: 0.04rem;
+}
+.potency-whole .potency-body .potency-strip div s {
+  font-size: 0.24rem;
+}
+.potency-whole .potency-body .potency-strip .potency-rate1 span {
+  background-color: #df5e39;
+}
+.potency-whole .potency-body .potency-strip .potency-rate2 span {
+  background-color: #f2883b;
+}
+.potency-whole .potency-body .potency-strip .potency-rate3 span {
+  background-color: #d7d7d7;
+}
+.potency-whole .potency-body .potency-strip .potency-rate4 span {
+  background-color: #68738c;
+}
+.potency-whole .potency-body .potency-strip .potency-rate5 span {
+  background-color: #3c424f;
+}

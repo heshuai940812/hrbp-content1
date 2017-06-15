@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>用工规范</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="../../css/normstyle/norm.css">
+  <script src="../../js/common/rem.js"></script>
+</head>
+<body>
+<div class="norm-complete">
+  <div class="norm-norframe">
+    <!--<div class="norm-header">-->
+    <!--<a href="./normIndex.html">详情 <i>></i></a>-->
+    <!--</div>-->
+    <div class="norm-normContent">
+      <p><span></span> 用工规范 <span></span></p>
+      <div class="norm-text">
+        <span id="specification_index">0</span>
+        <a href="normIndex.html">
+          <div class="norm-twig" id="norm_index_twig">
+            <div class="norm-ltwig"></div>
+            <div class="norm-rtwig"></div>
+          </div>
+          <span class="norm-skip iconfont icon-gengduo"></span>
+          <p>用工规范指数</p>
+        </a>
+      </div>
+      <div class="norm-thred"></div>
+    </div>
+
+  </div>
+  <div class="norm-norframe">
+    <div class="norm-normContent">
+      <p><span></span> 用工增岗 <span></span></p>
+      <div class="norm-text">
+        <span id="zenggang_index">0</span>
+        <a href="normIncrease.html">
+          <div class="norm-twig" id="norm_increase_twig">
+            <div class="norm-ltwig"></div>
+            <div class="norm-rtwig"></div>
+          </div>
+          <span class="norm-skip iconfont icon-gengduo"></span>
+          <p>用工增岗指数</p>
+        </a>
+      </div>
+      <div class="norm-thred"></div>
+    </div>
+  </div>
+  <div class="norm-norframe">
+
+    <div class="norm-normContent">
+      <p><span></span> 用工离岗 <span></span></p>
+      <div class="norm-text">
+        <span id="demobilized_index">0</span>
+        <a href="normLeave.html">
+          <div class="norm-twig" id="norm_leave_twig">
+            <div class="norm-ltwig"></div>
+            <div class="norm-rtwig"></div>
+          </div>
+          <span class="norm-skip iconfont icon-gengduo"></span>
+          <p>用工离岗指数</p>
+        </a>
+      </div>
+      <div class="norm-thred"></div>
+    </div>
+  </div>
+</div>
+
+<script src="../../js/common/jquery-2.1.0.min.js"></script>
+<script src="../../js/common/common.js"></script>
+<!-- API S-->
+<script src="../../js/api/api.common.js"></script>
+<script src="../../js/api/norm/api.norm.js"></script>
+<script src="../../js/api/norm/api.norm.callback.js"></script>
+<script type="text/javascript">
+  $(document).ready(function () {
+    cancelContrastHtml();
+    getBasicInformation('normApi');
+  });
+</script>
+<!-- API E-->
+
+</body>
+</html>

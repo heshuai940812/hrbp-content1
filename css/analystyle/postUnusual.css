@@ -1,0 +1,68 @@
+@import "../commonstyle/base.css";
+@import "../commonstyle/iconfont.css";
+.norm-normIndex .post-closetime {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: none;
+  z-index: 199;
+}
+.norm-normIndex .base-bodys .base-title {
+  position: relative;
+}
+.norm-normIndex .base-bodys .base-title .post-posttime {
+  display: inline-block;
+  float: right;
+}
+.norm-normIndex .base-bodys .base-title .post-timeShow {
+  position: absolute;
+  width: 7.5rem;
+  height: 2rem;
+  background-color: #fff;
+  left: 0;
+  top: 0.87rem;
+  z-index: 200;
+  display: none;
+  padding-top: 0.2rem;
+}
+.norm-normIndex .base-bodys .base-title .post-timeShow span {
+  display: block;
+  float: left;
+  width: 1.8rem;
+  height: 0.5rem;
+  line-height: 0.5rem;
+  text-align: center;
+  border: 1px dotted #979797;
+  margin: 0.2rem 0.2rem;
+}
+.norm-normIndex .base-bodys .post-normchart {
+  position: relative;
+}
+.norm-normIndex .base-bodys .post-normchart #post-norchart {
+  width: 6.8rem;
+  height: 4.86rem;
+  margin: 0 auto;
+}
+.norm-normIndex .base-bodys .post-normchart .post-markpoin {
+  position: absolute;
+  left: 4.5rem;
+  top: 0.3rem;
+}
+.norm-normIndex .base-bodys .post-normchart .post-markpoin span {
+  width: 1.06rem;
+  display: inline-block;
+  height: 0.14rem;
+  background: url("../../img/lineBg.png") no-repeat;
+  -webkit-background-size: 100%;
+  background-size: 100%;
+}
+#post-changepic {
+  width: 6.8rem;
+  height: 4.86rem;
+  margin: 0 auto;
+}
+.post-timeclick {
+  background-color: #E66440;
+  color: #ffffff;
+  border: 1px solid #E66440 !important;
+}

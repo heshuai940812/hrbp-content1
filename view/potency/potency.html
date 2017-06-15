@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>工作效能评估</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="../../css/normstyle/normIndex.css">
+  <link rel="stylesheet" href="../../css/analystyle/postUnusual.css">
+  <link rel="stylesheet" href="../../css/commonstyle/lCalendar.css">
+  <link rel="stylesheet" href="../../css/potency/potency.css">
+  <script src="../../js/common/echarts.min.js"></script>
+  <script src="../../js/common/lCalendar.js"></script>
+  <script src="../../js/common/rem.js"></script>
+  <style>
+    .date_ctrl {
+      left: 2.3rem;
+      top: 0rem;
+      width: 5rem;
+    }
+  </style>
+</head>
+<body>
+<input id="dateFlag" type="hidden" name="dateFlag" value="false" />
+<input id="monthFlag" type="hidden" name="monthFlag" value="false" />
+<div class=" potency-whole">
+  <div class="h-closetime"></div>
+  <div class="base-header">
+    <div
+            class="base-lhead"><s id="region"></s> <span class="base-iconone iconfont icon-xiala"></span> <i
+            class="fr">|
+    </i></div>
+    <div class="base-chead"><s id="post"></s> <span class="base-icontwo iconfont icon-xiala"></span>
+      <i class="fr">|</i></div>
+    <div class="base-rhead" id="showdata"><s id="month"></s> <span
+            class="base-iconthree iconfont icon-xiala"></span></div>
+  </div>
+  <div class="post-drop">
+    <div class="base-area-dropDown">
+      <div class="base-area-frienDrop" id="droplDown">
+        <div class="base-area-leftDrop"></div>
+        <div class="base-area-rightDrop"></div>
+      </div>
+      <div class="base-area-closedrop"></div>
+    </div>
+    <div class="base-dropDown">
+      <div class="base-frienDrop" id="personnelDown">
+        <div class="base-leftDrop"></div>
+        <div class="base-rightDrop"></div>
+      </div>
+      <div class="base-closedrop"></div>
+    </div>
+    <div class="base-dropDown">
+      <div class="base-frienDrop" id="dateDropDown">
+        <div class="date-leftDrop">
+          <!--<p class="leftdropstyle" id="daysDate">日期</p>-->
+          <p id="monthDate">月度</p>
+        </div>
+        <div class="date-rightDrop " id="loadICalendar" data-lcalendar="2011-01-1,2019-12-31">
+
+        </div>
+      </div>
+      <div class="data-closedrop"></div>
+    </div>
+  </div>
+  <div class="base-bodys potency-body">
+    <div class="base-title">
+      工作效能指数
+    </div>
+    <div class="potency-number" id="potency_index_point">
+      <span id="potency_index">0</span>
+    </div>
+    <div class="base-title">
+      工作效能分布图
+    </div>
+    <div id="scatter_point">
+      <div class="potency-picture">
+        <div id="scatter"></div>
+      </div>
+      <div class="potency-strip" id="strip">
+        <div class="potency-rate1">
+          <span class="potency-span1"></span>
+          <s>高效 <i id="num-span1"></i></s>
+        </div>
+        <div class="potency-rate2">
+          <span class="potency-span2"></span>
+          <s>勤奋 <i id="num-span2"></i></s>
+        </div>
+        <div class="potency-rate3">
+          <span class="potency-span3"></span>
+          <s>普通 <i id="num-span3"></i></s>
+        </div>
+        <div class="potency-rate4">
+          <span class="potency-span4"></span>
+          <s>低效 <i id="num-span4"></i></s>
+        </div>
+        <div class="potency-rate5">
+          <span class="potency-span5"></span>
+          <s>慵懒 <i id="num-span5"></i></s>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="../../js/common/echarts.min.js"></script>
+<script src="../../js/common/jquery-2.1.0.min.js"></script>
+<script src="../../js/common/common.js"></script>
+<!-- API S-->
+<script src="../../js/api/api.common.js"></script>
+<script src="../../js/api/potency/api.potency.js"></script>
+<script src="../../js/api/potency/api.potency.callback.js"></script>
+<script type="text/javascript">
+  $(document).ready(function () {
+    getContrastHtml(POTENCY_TASKPERFORMCONTRAST_URL);
+    getBasicInformation('potencyApi');
+  });
+</script>
+<!-- API E-->
+<script>
+  $(".date_btn_box").css("display", "none");
+  $(".h-posttime").on("click", function () {
+    $(".h-timeShow").stop().fadeToggle();
+    $(".h-closetime").stop().fadeToggle();
+    $(".h-posttime .icon-xiala").toggleClass("icon-shangla");
+
+  })
+  $(".h-closetime").on("click", function () {
+    $(".h-timeShow").stop().fadeToggle();
+    $(".h-closetime").stop().fadeToggle();
+    $(".h-posttime .icon-xiala").toggleClass("icon-shangla");
+  })
+  $(".h-timeShow").on("click", "span", function () {
+    $(this).addClass("h-timeclick").siblings().removeClass("h-timeclick");
+    var index = $(this).index();
+    var txt = $(this).html();
+    console.log(txt);
+    $(".h-posttime span").html("在岗时长" + txt + " ");
+  })
+</script>
+</body>
+</html>

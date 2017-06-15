@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>人员流动分析</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="../../css/normstyle/norm.css">
+    <script src="../../js/common/rem.js"></script>
+</head>
+<body>
+<div class="norm-complete">
+    <div class="norm-norframe">
+        <!--<div class="norm-header">-->
+        <!--<a href="./normIndex.html">详情 <i>></i></a>-->
+        <!--</div>-->
+        <div class="norm-normContent">
+            <p><span></span> 岗位变动识别 <span></span></p>
+            <div class="norm-text">
+                <span id="position_stability_index">0</span>
+                <a href="./postChange.html">
+                    <div class="norm-twig" id="post_change_twig">
+                        <div class="norm-ltwig"></div>
+                        <div class="norm-rtwig"></div>
+                    </div>
+                    <span class="norm-skip iconfont icon-gengduo"></span>
+                    <p>岗位稳定指数</p>
+                </a>
+            </div>
+            <div class="norm-thred"></div>
+        </div>
+
+    </div>
+    <div class="norm-norframe">
+        <div class="norm-normContent">
+            <p><span></span> 在岗异常识别 <span></span></p>
+            <div class="norm-text">
+                <span id="emp_in_post_index">0</span>
+                <a href="postUnusual.html">
+                    <div class="norm-twig" id="post_unusual_twig">
+                        <div class="norm-ltwig"></div>
+                        <div class="norm-rtwig"></div>
+                    </div>
+                    <span class="norm-skip iconfont icon-gengduo"></span>
+                    <p>在岗异常指数</p>
+                </a>
+            </div>
+            <div class="norm-thred"></div>
+        </div>
+    </div>
+    <div class="norm-norframe">
+
+        <div class="norm-normContent">
+            <p><span></span> 离职识别分析 <span></span></p>
+            <div class="norm-text">
+                <span id="turnover_intention_index">0</span>
+                <a href="leave.html">
+                    <div class="norm-twig" id="leave_twig">
+                        <div class="norm-ltwig"></div>
+                        <div class="norm-rtwig"></div>
+                    </div>
+                    <span class="norm-skip iconfont icon-gengduo"></span>
+                    <p>离职倾向指数</p>
+                </a>
+            </div>
+            <div class="norm-thred"></div>
+        </div>
+    </div>
+    <div class="norm-norframe">
+
+        <div class="norm-normContent">
+            <p><span></span> 离职去向分析 <span></span></p>
+            <div class="norm-text">
+                <span id="remain_in_city">0</span>
+                <a href="leaveDirection.html">
+                    <div class="norm-twig" id="leave_direction_twig">
+                        <div class="norm-ltwig"></div>
+                        <div class="norm-rtwig"></div>
+                    </div>
+                    <span class="norm-skip iconfont icon-gengduo"></span>
+                    <p>留在本市指数</p>
+                </a>
+            </div>
+            <div class="norm-thred"></div>
+        </div>
+    </div>
+</div>
+
+<script src="../../js/common/jquery-2.1.0.min.js"></script>
+<script src="../../js/common/common.js"></script>
+
+<!-- API S-->
+<script src="../../js/api/api.common.js"></script>
+<script src="../../js/api/flowAnaly/api.flow.analy.js"></script>
+<script src="../../js/api/flowAnaly/api.flow.analy.callback.js"></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        cancelContrastHtml();
+        getBasicInformation('flowAnalyApi');
+    });
+</script>
+<!-- API E-->
+
+</body>
+</html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>岗位变动对比</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
+    <link rel="stylesheet" href="../../css/commonstyle/base.css"/>
+    <link rel="stylesheet" href="../../css/contrastStyle/changeContrastMain.css"/>
+    <link rel="stylesheet" href="../../css/contrastStyle/positionChangeContrast.css"/>
+    <script src="../../js/common/rem.js"></script>
+    <script src="../../js/common/echarts.min.js"></script>
+    <script src="../../js/common/jquery-2.1.0.min.js"></script>
+    <script src="../../js/common/common.js"></script>
+    <script src="../../js/api/api.common.js"></script>
+</head>
+<body>
+<!--<div class="com_head fgb-color title-color">-->
+<!--岗位变动对比-->
+<!--</div>-->
+<div class="com_center">
+    <ul class="contrastList">
+        <li class="currentOption">区域对比</li>
+        <li>岗位对比</li>
+        <li style="border:none;">时间对比</li>
+    </ul>
+
+    <div class="slide">
+        <dl class="slide-dl ">
+            <dt>请选择对比维度（多选）</dt>
+            <dd>
+                <ul class="multiSelect">
+                    <li class="addContrast"><span class="addText">添加</span><span class="iconfont icon-xiala"></span>
+                    </li>
+                </ul>
+            </dd>
+        </dl>
+        <div class="addAreaList">
+            <div class="whiteBg">
+                <ul>
+
+                </ul>
+                <div class="btnOk">确定</div>
+            </div>
+        </div>
+        <div class="splitLine"></div>
+        <dl class="slide-dl slide-dl-position">
+            <dt>请选择固定维度（单选）</dt>
+            <dd>
+                <div class="styled-select" id="leftSelect">
+                    <i class="currentSelect">装修人员</i>
+                    <span class="iconfont icon-xiala"></span>
+                </div>
+                <div class="styled-select marginLeft" id="rightSelect">
+                    <i class="currentSelect">2017.04</i>
+                    <span class="iconfont icon-xiala"></span>
+                </div>
+                <div class="selectAreaList" id="selectLeftArea">
+                    <div class="whiteBg">
+                        <ul>
+                        </ul>
+                    </div>
+                </div>
+                <div class="selectAreaList" id="selectRightArea">
+                    <div class="whiteBg">
+                        <ul>
+                        </ul>
+                    </div>
+                </div>
+            </dd>
+        </dl>
+        <div class="splitModule"></div>
+        <div class="ch_columar_title">
+            <div class="areaTitle">
+                <span class="multiSelectName"></span><span class="currentSingleLeftName"></span><span
+                    class="currentSingleRightName"></span>月份对比
+            </div>
+            <div class="stationTitle">
+                <span class="currentSingleLeftName"></span><span class="multiSelectName"></span><span
+                    class="currentSingleRightName"></span>月份对比
+            </div>
+            <div class="titleTitle">
+                <span class="currentSingleLeftName"></span><span class="currentSingleRightName"></span><span
+                    class="multiSelectName"></span>月份对比
+            </div>
+        </div>
+        <div id="columar-area-point" class="columar-area-point">
+            <div id="columar-area"></div>
+            <div class="columar-tip ml-160">
+                <div class="tipImg-abnormal"></div>
+                岗位变动
+            </div>
+            <div class="columar-tip">
+                <span class="tipImg-normal"></span>
+                岗位稳定
+            </div>
+        </div>
+        <div class="base-moreData-contrast">未获取到数据</div>
+    </div>
+</div>
+
+<script src="../../js/api/flowAnaly/jobChanges/api.job.changes.contrast.js"></script>
+<script src="../../js/api/flowAnaly/jobChanges/api.job.changes.contrast.callback.js"></script>
+<script src="../../js/contrast/positionChangeContrast.js"></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        cancelContrastHtml();
+        getBasicInformation('multiDimensionContrastApi');
+    });
+</script>
+</body>
+</html>

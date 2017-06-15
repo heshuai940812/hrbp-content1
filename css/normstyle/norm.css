@@ -1,0 +1,101 @@
+@import "../commonstyle/base.css";
+@import "../commonstyle/iconfont.css";
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+.norm-complete {
+  height: 100%;
+  background-color: #F1F3F6;
+}
+.norm-complete .norm-norframe {
+  width: 100%;
+  height: 2.69rem;
+  background-color: #ffffff;
+  margin-bottom: 0.18rem;
+  margin: 0 auto;
+}
+.norm-complete .norm-norframe .norm-normContent {
+  width: 5.92rem;
+  height: 1.9rem;
+  line-height: 0.6rem;
+  margin: 0 auto;
+  font-size: 0.93333333rem;
+}
+.norm-complete .norm-norframe .norm-normContent p {
+  text-align: center;
+  font-size: 0.3rem;
+  color: #222222;
+  padding-top: 0.3rem;
+  margin-bottom: 0.4rem;
+}
+.norm-complete .norm-norframe .norm-normContent p span {
+  display: inline-block;
+  width: 1.89rem;
+  height: 0.1rem;
+  border-top: 1px solid #D7D7D7;
+}
+.norm-complete .norm-norframe .norm-normContent .norm-text {
+  width: 5.91rem;
+  height: 0.95rem;
+  margin: 0 auto;
+}
+.norm-complete .norm-norframe .norm-normContent .norm-text span {
+  display: block;
+  float: left;
+  font-size: 0.75rem;
+  font-weight: 600;
+  font-family: Arial;
+  font-style: italic;
+}
+.norm-complete .norm-norframe .norm-normContent .norm-text a {
+  display: block;
+  float: left;
+}
+.norm-complete .norm-norframe .norm-normContent .norm-text a .norm-twig {
+  width: 3.54rem;
+  height: 0.22rem;
+  margin: 0 auto;
+  background-color: #F1F3F6;
+  border-radius: 0.3rem;
+  overflow: hidden;
+  box-sizing: border-box;
+  float: left;
+  margin-top: 0.17rem;
+  margin-left: 0.6rem;
+  margin-right: 0.5rem;
+}
+.norm-complete .norm-norframe .norm-normContent .norm-text a .norm-twig div {
+  height: 0.22rem;
+  line-height: 0.22rem;
+  text-align: center;
+  color: #F1F3F6;
+  float: left;
+  font-size: 0.24rem;
+}
+.norm-complete .norm-norframe .norm-normContent .norm-text a .norm-twig .norm-ltwig {
+  background-color: #E66440;
+}
+.norm-complete .norm-norframe .norm-normContent .norm-text a .norm-twig .norm-rtwig {
+  background-color: #3C424F;
+}
+.norm-complete .norm-norframe .norm-normContent .norm-text a span {
+  display: block;
+  float: left;
+  font-size: 0.4rem;
+  font-style: inherit;
+}
+.norm-complete .norm-norframe .norm-normContent .norm-text a p {
+  text-align: left;
+  margin: 0;
+  margin-top: -0.05rem;
+  font-size: 0.27rem;
+  color: #666666;
+  text-indent: 1.47rem;
+}
+.norm-complete .norm-norframe .norm-normContent .norm-thred {
+  width: 0.36rem;
+  height: 0.05rem;
+  border-bottom: 1px solid #D7D7D7;
+}

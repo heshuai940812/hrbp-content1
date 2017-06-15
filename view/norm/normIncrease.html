@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>用工增岗</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="../../css/normstyle/normIndex.css">
+  <link rel="stylesheet" href="../../css/commonstyle/lCalendar.css">
+  <script src="../../js/common/echarts.min.js"></script>
+  <script src="../../js/common/rem.js"></script>
+  <style>
+    .date_ctrl {
+      left: 2.3rem;
+      top: 0rem;
+      width: 5rem;
+    }
+  </style>
+</head>
+<body>
+<input id="dateFlag" type="hidden" name="dateFlag" value="false" />
+<input id="monthFlag" type="hidden" name="monthFlag" value="false" />
+<div class="norm-normIndex">
+  <div class="post-closetime"></div>
+  <div class="base-header">
+    <div
+            class="base-lhead"><s id="region"></s> <span class="base-iconone iconfont icon-xiala"></span> <i
+            class="fr">|
+    </i></div>
+    <div class="base-chead"><s id="post"></s> <span class="base-icontwo iconfont icon-xiala"></span>
+      <i class="fr">|</i></div>
+    <div class="base-rhead" id="showdata"><s id="month"></s> <span
+            class="base-iconthree iconfont icon-xiala"></span></div>
+  </div>
+  <div class="post-drop">
+    <div class="base-area-dropDown">
+      <div class="base-area-frienDrop" id="droplDown">
+        <div class="base-area-leftDrop"></div>
+        <div class="base-area-rightDrop"></div>
+      </div>
+      <div class="base-area-closedrop"></div>
+    </div>
+    <div class="base-dropDown">
+      <div class="base-frienDrop" id="personnelDown">
+        <div class="base-leftDrop"></div>
+        <div class="base-rightDrop"></div>
+      </div>
+      <div class="base-closedrop"></div>
+    </div>
+    <div class="base-dropDown">
+      <div class="base-frienDrop" id="dateDropDown">
+        <div class="date-leftDrop">
+          <!--<p class="leftdropstyle" id="daysDate">日期</p>-->
+          <p id="monthDate">月度</p>
+        </div>
+        <div class="date-rightDrop " id="loadICalendar" data-lcalendar="2011-01-1,2019-12-31">
+
+        </div>
+      </div>
+      <div class="data-closedrop"></div>
+    </div>
+  </div>
+  <div class="base-bodys">
+    <div class="base-title">
+      用工增岗占比图
+    </div>
+    <div class="base-navs" id="norm_increase_twig_point">
+      <p>用工增岗人数：<span id="y_totalNum">0</span> 正常人数：<span id="n_totalNum">0</span></p>
+      <div class="base-twig" id="norm_increase_twig">
+        <div class="base-ltwig"></div>
+        <div class="base-rtwig"></div>
+      </div>
+      <div class="base-chara">
+        <div class="base-lchar">
+          <span></span>
+          <s>增岗 <i id="num-lchar"></i></s>
+        </div>
+
+        <div class="base-rchar">
+          <span></span>
+          <s>正常 <i id="num-zchar"></i></s>
+        </div>
+      </div>
+    </div>
+    <div class="base-title">
+      用工增岗情况排名
+    </div>
+    <div class="norm-normchart" id="h-norchart-point">
+      <div id="h-norchart"></div>
+      <div class="base-chara">
+        <div class="base-lchar">
+          <span></span>
+          增岗
+        </div>
+        <div class="base-rchar">
+          <span></span>
+          总人数
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+<script src="../../js/common/echarts.min.js"></script>
+<script src="../../js/common/jquery-2.1.0.min.js"></script>
+<script src="../../js/common/common.js"></script>
+<script src="../../js/common/lCalendar.js"></script>
+<!-- API S-->
+<script src="../../js/api/api.common.js"></script>
+<script src="../../js/api/norm/lncrease/api.lncrease.js"></script>
+<script src="../../js/api/norm/lncrease/api.lncrease.callback.js"></script>
+<script type="text/javascript">
+  $(document).ready(function () {
+    getContrastHtml(NORM_ZENGGANGCONTRAST_URL);
+    getBasicInformation('normIncreaseApi');
+  });
+</script>
+<!-- API E-->
+</body>
+</html>

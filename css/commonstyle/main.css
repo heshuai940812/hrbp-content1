@@ -1,0 +1,104 @@
+/*@import "../base.css";*/
+@import "../iconfont.css";
+/*@import "../adaptr.css";*/
+/*css reset*/
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td{margin:0;padding:0;}
+fieldset,img{border: 0}
+ol,ul{list-style:none}
+
+/*头部*/
+.com_head,.com_bottom,.com_center{width:7.50rem;}
+.com_head{
+    height:0.88rem;
+    text-align:center;
+    line-height:0.88rem;
+    font-size:0.36rem;
+}
+/*主体*/
+.com_center{
+    height:auto;
+}
+/*皮肤颜色*/
+.mbg-color{background:#E66440;} /*主要背景颜色*/
+.title-color{color:#E66440;} /*主要文字颜色*/
+.fgb-color{background:#3c424f} /*辅助颜色*/
+.if-color{color:#222} /*重要级文字，内容标题颜色*/
+.mf-color{color:#666} /*主要文字颜色*/
+.splitLine-color{color: #d7d7d7} /*分割线*/
+.splitModule-color{background:#f1f3f6} /*分割模块底色*/
+.white-color{color:#fff} /*白色颜色的文字*/
+
+
+/*分割线*/
+.splitLine{
+    height:0.03rem;
+    background:#d7d7d7;
+}
+/*中文字字体*/
+.ff-zh{ "PingFangTC-Regular", "Microsoft YaHei ", "SimHei ";}
+/*英文字字体*/
+.ff-en{"Helvetica Neue"}
+
+/*字号*/
+.fs-40{font-size: 0.40rem} /*40px*/
+.fs-36{font-size: 0.36rem} /*36px*/
+.fs-30{font-size: 0.30rem} /*30px*/
+.fs-28{font-size: 0.28rem} /*28px*/
+.fs-26{font-size: 0.26rem} /*26px*/
+.fs-24{font-size: 0.24rem} /*24px*/
+.fs-22{font-size: 0.22rem} /*22px*/
+.fs-20{font-size: 0.20rem}
+/*按钮*/
+.loginBtn ,.btnOk{
+    text-align: center;
+    border-radius:0.06rem;
+}
+/*登录按钮*/
+.loginBtn{
+    width: 6.90rem;
+    height: 0.88rem;
+    line-height: 0.88rem;
+    border:0.01rem solid #E66440;
+    margin:0 auto;
+}
+/*确定按钮*/
+.btnOk{
+    width:2.54rem;
+    height:0.64rem;
+    line-height:0.64rem;
+    margin:0 auto;
+}
+
+
+/*padding*/
+.pl-10{padding-left:0.1rem;}
+.plr{padding-left:0.69rem;padding-right: 0.69rem;}
+
+/*margin*/
+.mt-12{margin-top:0.12rem;}
+.mt-18{margin-top:0.18rem;}
+.mt-40{margin-top:0.4rem;}
+.mt-32{margin-top:0.32rem;}
+.mt-412{margin-top:4.12rem;}
+.mt-47{margin-top: 0.47rem;}
+.mr-35{margin-right:0.35rem;}
+.mt-50{margin-top:0.5rem}
+.mt-29{margin-top:0.29rem}
+.mlr{margin-left:auto;margin-right: auto;}
+
+/*定位*/
+.tl{text-align:left}
+.tc{text-align:center}
+.tr{text-align:right}
+.pr{position: relative}
+.pa{position: absolute}
+.cb{clear: both}
+.cl{clear: left}
+.cr{clear: right}
+.fl{float: left}
+.fr{float: right}
+
+/*长度宽度*/
+.w750{width:7.5rem}
+.w610{width: 6.10rem}
+.h14{height:0.14rem}

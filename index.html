@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="css/index.css"/>
+    <script src="./js/echarts.common.min.js"></script>
+    <!--<script src="js/less.js"></script>-->
+</head>
+<body>
+<div class="whols">
+    <div class="header">
+
+    </div>
+    <div class="box1">
+        <div class="title">
+            <span class="l-span">岗位变动识别</span>
+            <a href="view/map/map.html">详情<i>></i></a>
+        </div>
+        <div id="pic1"></div>
+        <div class="shownumber">
+            80%
+        </div>
+    </div>
+    <div class="box2">
+        <div class="title">
+            <span class="l-span">在岗异常识别</span>
+            <a href="view/norm/norm.html">详情<i>></i></a>
+        </div>
+    </div>
+    <div class="box3">
+        <div class="title">
+            <span class="l-span">工作效率信息</span>
+            <a href="view/analy/flowAnaly.html">详情<i>></i></a>
+        </div>
+        <div id="line"></div>
+    </div>
+</div>
+<script type="text/javascript">
+    function h_echarts() {
+        var myCharts1 = echarts.init(document.getElementById('pic1'));
+        var option1 = {
+            backgroundColor: '#f7f7f7',
+            title: {
+                left: 'center',
+                bottom: 10,
+                width: "50%",
+                height: "70%",
+                textStyle: {
+                    color: '#f7f7f7'
+                }
+            },
+            tooltip: {
+                trigger: 'item',
+                formatter: "{a} <br/>{b} : {d}%"
+            },
+            visualMap: {
+                show: false,
+                min: 500,
+                max: 600,
+                inRange: {
+                    colorLightness: [0, 1]
+                }
+            },
+            series: [
+                {
+                    name: '岗位识别',
+                    type: 'pie',
+                    clockwise: 'true',
+                    startAngle: '0',
+                    radius: '50%',
+                    center: ['50%', '50%'],
+                    data: [
+                        {
+                            value: 80,
+                            name: 80,
+                            itemStyle: {
+                                normal: {
+                                    color: '#8d8d8d',
+                                }
+                            }
+                        },
+                        {
+                            value: 20,
+                            name: 20,
+                            itemStyle: {
+                                normal: {
+                                    color: '#cecece'
+                                }
+                            }
+                        }
+
+                    ],
+                }
+            ]
+        };
+        myCharts1.setOption(option1);
+        var chart = document.getElementById('line');
+        var echart = echarts.init(chart);
+        var option = {
+            title: {
+                text: '',
+                borderColor: "#979797",
+            },
+            grid: {
+                left: '0%',
+                right: '4%',
+                bottom: '0.5%',
+            },
+            xAxis: {
+                data: ['周一', '周二', '周三', '周四', '周五', '周六', '周日'],
+                splitLine: {
+                    show: false
+                }
+            },
+            yAxis: {
+                splitLine: {
+                    show: false
+                }
+            },
+            series: [
+                {
+                    name: '工作效率',
+                    type: 'line',
+                    stack: '效率',
+                    smooth: true,
+                    itemStyle: {
+                        normal: {
+                            lineStyle: {
+                                color: '#979797'
+                            }
+                        }
+                    },
+                    data: [220, 132, 400, 314, 500, 230, 510]
+                }
+            ]
+        };
+
+        echart.setOption(option);
+    }
+    h_echarts();
+</script>
+</body>
+</html>

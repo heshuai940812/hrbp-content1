@@ -1,0 +1,569 @@
+//@import "adaptr.css";
+@import "variable.less";
+body, ul, dd, h3, h4, h5, p ,img{
+	padding: 0;
+	margin: 0;
+}
+
+s{
+	text-decoration: none;
+}
+
+a {
+	text-decoration: none;
+	display: block;
+}
+
+img {
+	display: block;
+	max-width: 100%;
+}
+
+.fl{
+	float: left;
+	
+}
+.fr{
+	float: right;
+}
+i{
+	font-style: inherit;
+
+}
+p,span,ul,li,button,s,div,a{
+	font-size: 30/100rem;
+	color: @textcolor;
+	font-family: "PingFangSC-Regular","Microsoft YaHei ","SimHei ";
+}
+//公用显示
+.base-show{
+	display: block !important;
+}
+//公用的頭部樣式
+.base-header{
+	width: 750/100rem;
+	height : 70/100rem;
+	line-height: 70/100rem;
+	display: flex;
+	margin: 0 auto;
+	border-bottom: 1px solid #D7D7D7;
+	//background: url("") no-repeat;
+	-webkit-background-size:100%;
+	background-size:100%;
+	background-position: 0 bottom;
+	div{
+		flex: 1;
+		color: #737373;
+		//font-size: 0.8rem;
+		text-align: center;
+		.iconfont{
+			font-weight: 600;
+		}
+	}
+	.base-lhead{
+		text-indent: 5/100rem;
+	}
+	.base-chead{
+		text-align: center;
+		text-indent: 15/100rem;
+	}
+
+}
+
+//公用的標題樣式
+.base-title{
+	width: 676/100rem;
+	height: 65/100rem;
+	line-height: 65/100rem;
+	border-bottom: 1px solid #eeeeee;
+	margin: 0 auto;
+	color: #222222;
+	font-size: 32/100rem;
+	padding-top: 20/100rem;
+	position: relative;
+}
+
+//公用的分割線
+.base-split{
+	width: 100%;
+	height: 10/100rem;
+	background-color: #f1f3f6;
+}
+
+//柱状图下面标志公用样式
+.base-chara{
+	width : 614/100rem;
+	margin: 0 auto;
+	height: 1rem;
+	line-height: 1rem;
+	div{
+		width: 50%;
+		float: left;
+		height: 30/100rem;
+		line-height: 30/100rem;
+		text-indent: 5/100rem;
+		font-size: 24/100rem;
+		span{
+			display: block;
+			float: left;
+			width: 24/100rem;
+			height: 24/100rem;
+			margin-top: 2/100rem;
+			margin-left: 15/100rem;
+			border-radius: 4/100rem;
+		}
+		s{
+			font-size: 24/100rem;
+		}
+	}
+	.base-lchar{
+		span{
+			background-color: @red;
+		}
+	}
+	.base-rchar{
+		span{
+			background-color: @blueblack;
+		}
+	}
+	.base-rmarkpoin{
+		span{
+			display: inline-block;
+			width: 30/100rem;
+			height: 30/100rem;
+			margin-top: -2/100rem;
+			background-color: @accist;
+			border-radius: 68% 68% 0% 68%;
+			transform: rotate(43deg);
+		}
+	}
+}
+
+//这是进度条的css
+.base-navs{
+	padding-top: 10/100rem;
+	padding-bottom: 30/100rem;
+	width: 655/100rem;
+	margin: 0 auto;
+	margin-bottom: 10/100rem;
+	p{
+		margin: 24/100rem 0;
+		font-size: 28/100rem;
+		text-align: center;
+		span{
+			font-size: 34/100rem;
+			color: #e66440;
+		}
+	}
+	.base-twig{
+		width: 655/100rem;
+		height: 48/100rem;
+		margin: 0 auto;
+		background-color: @impression;
+		border-radius: 30/100rem;
+		overflow: hidden;
+		box-sizing: border-box;
+		padding: 10/100rem;
+		div{
+			height: 30/100rem;
+			line-height: 30/100rem;
+			text-align: center;
+			color: #ffffff;
+			float: left;
+			font-size: 24/100rem;
+		}
+		.base-ltwig{
+			width: 0%;
+			background-color: @leftColor;
+			border-radius: 25/100rem 0 0 25/100rem;
+		}
+		.base-ztwig{
+			width: 0%;
+			background-color: @centerColor;
+		}
+		.base-rtwig{
+			width: 0%;
+			background-color: @rightColor;
+			border-radius: 0 25/100rem 25/100rem 0;
+		}
+		//这是用工离岗的css
+		.base-llwig{
+			width: 0%;
+			background-color: @red;
+			border-radius: 25/100rem 0 0 25/100rem;
+		}
+		.base-zlwig{
+			width: 0%;
+			background-color: @accist;
+			border-radius: 0 25/100rem 25/100rem 0;
+		}
+	}
+	.base-chara{
+		width : 614/100rem;
+		margin: 0 auto;
+		margin-top: 25/100rem;
+		height: 30/100rem;
+		line-height: 30/100rem;
+		div{
+			float: left;
+			width: 50%;
+			height: 30/100rem;
+			line-height: 30/100rem;
+			text-indent: 5/100rem;
+			font-size: 24/100rem;
+			span{
+				display: block;
+				float: left;
+				width: 24/100rem;
+				height: 24/100rem;
+				margin-top: 2/100rem;
+				margin-left: 15/100rem;
+				border-radius: 4/100rem;
+			}
+			s{
+				font-size: 24/100rem;
+			}
+		}
+		.base-lchar{
+			span{
+				background-color: @leftColor;
+			}
+		}
+		.base-zchar{
+			span{
+				background-color: @centerColor;
+			}
+		}
+		.base-rchar{
+			span{
+				background-color: @rightColor;
+			}
+		}
+		.base-rmarkpoin{
+			span{
+				display: inline-block;
+				width: 30/100rem;
+				height: 30/100rem;
+				background-color: @accist;
+				border-radius: 68% 68% 0% 68%;
+				transform: rotate(43deg);
+			}
+		}
+	}
+}
+//这是点击这个三个值的样式
+.base-charaThree{
+	width : 614/100rem;
+	margin: 0 auto;
+	margin-top: 25/100rem;
+	height: 30/100rem;
+	line-height: 30/100rem;
+
+	div{
+		width: 33.33%;
+		float: left;
+		height: 30/100rem;
+		line-height: 30/100rem;
+		text-indent: 5/100rem;
+		font-size: 24/100rem;
+		span{
+			display: block;
+			float: left;
+			width: 24/100rem;
+			height: 24/100rem;
+			margin-top: 2/100rem;
+			margin-left: 15/100rem;
+			border-radius: 4/100rem;
+		}
+		s{
+			font-size: 24/100rem;
+		}
+	}
+	.base-lchar{
+		span{
+			background-color: @leftColor;
+		}
+	}
+	.base-zchar{
+		span{
+			background-color: @centerColor;
+		}
+	}
+	.base-rchar{
+		span{
+			background-color: @rightColor;
+		}
+	}
+	.base-rmarkpoin{
+		span{
+			display: inline-block;
+			width: 30/100rem;
+			height: 30/100rem;
+			background-color: @accist;
+			border-radius: 68% 68% 0% 68%;
+			transform: rotate(43deg);
+		}
+	}
+}
+
+
+
+.base-area-dropDown{
+	//width: 750/100rem;
+	position: absolute;
+	//height: 100%;
+ 	left: 0;
+	top: 72/100rem;
+	//overflow: hidden;
+	//background-color: rgba(0, 0, 0, 0.5);
+	//display: none;
+	//z-index: 200;
+	.base-area-frienDrop{
+		width: 750/100rem;
+		background-color: #fff;
+		overflow: hidden;
+		position: absolute;
+		display: none;
+		z-index: 210;
+		.base-area-leftDrop{
+			width: 300/100rem;
+			background-color: #f1f3f6;
+			float: left;
+			padding-bottom: 115/100rem;
+			height: 100%;
+			p{
+				display: block;
+				width: 100%;
+				height: 72/100rem;
+				line-height: 72/100rem;
+				border-bottom:1px solid #ecedef;
+				text-indent: 52/100rem;
+				overflow: hidden;
+				text-overflow:ellipsis;
+				white-space: nowrap;
+			}
+		}
+
+		.base-area-rightDrop{
+			width:430/100rem;
+			float: left;
+			background-color: #fff;
+			p{
+				display: block;
+				height: 72/100rem;
+				line-height: 72/100rem;
+				width: 472/100rem;
+				border-bottom:1px solid #ecedef;
+				margin: 0 auto;
+				font-size: 27/100rem;
+				text-indent: 52/100rem;
+				white-space:nowrap;
+				overflow:hidden;
+				text-overflow:ellipsis;
+			}
+		}
+	}
+	.base-area-closedrop{
+		position: absolute;
+		//width: 100%;
+		display: none;
+		width: 750/100rem;
+		height: 100%;
+		min-height: 1148/100rem;
+		left: 0;
+		top: 0;
+		z-index: 205;
+		background-color: rgba(0, 0, 0, 0.5);
+	}
+	span{
+		width: 20/100rem;
+		position: absolute;
+		height: 25/100rem;
+		top: -25/100rem;
+		left: 98/100rem;
+		z-index: 210;
+		text-indent: -7/100rem;
+		background-color: #fff;
+	}
+}
+.base-dropDown{
+	//width: 750/100rem;
+	position: absolute;
+	//height: 100%;
+	//min-height: 1280/100rem;
+	left: 0;
+	top: 72/100rem;
+	//overflow: hidden;
+	//background-color: rgba(0, 0, 0, 0.5);
+	//display: none;
+	//z-index: 200;
+	.base-frienDrop{
+		width: 750/100rem;
+		background-color: #fff;
+		overflow: auto;
+		position: absolute;
+		z-index: 210;
+		display: none;
+		.base-leftDrop,.date-leftDrop{
+			width: 250/100rem;
+			background-color: #f1f3f6;
+			float: left;
+			padding-bottom: 115/100rem;
+			height: 100%;
+			p{
+				display: block;
+				width: 100%;
+				height: 72/100rem;
+				line-height: 72/100rem;
+				border-bottom:1px solid #ecedef;
+				text-indent: 52/100rem;
+			}
+		}
+		.date-leftDrop{
+			height: 2.8rem;
+		}
+		.base-rightDrop,.date-rightDrop{
+			width:500/100rem;
+			float: left;
+			background-color: #fff;
+			p{
+				display: block;
+				height: 72/100rem;
+				line-height: 72/100rem;
+				width: 472/100rem;
+				border-bottom:1px solid #ecedef;
+				margin: 0 auto;
+				font-size: 27/100rem;
+				text-indent: 52/100rem;
+				white-space:nowrap;
+				overflow:hidden;
+				text-overflow:ellipsis;
+			}
+		}
+		.date-rightDrop{
+			height:2.8rem;
+		}
+	}
+	.base-closedrop,.data-closedrop{
+		position: absolute;
+		//width: 100%;
+		display: none;
+		width: 750/100rem;
+		height: 100%;
+		min-height: 1148/100rem;
+		left: 0;
+		top: 0;
+		z-index: 205;
+		background-color: rgba(0, 0, 0, 0.5);
+	}
+	span{
+		width: 20/100rem;
+		position: absolute;
+		height: 25/100rem;
+		top: -25/100rem;
+		left: 98/100rem;
+		z-index: 210;
+		text-indent: -7/100rem;
+		background-color: #fff;
+	}
+}
+.leftdropstyle{
+	background-color: #fff;
+	color: #eb8265;
+}
+.rightdropstyle{
+	color: #eb8265;
+	border-color: #f3b2a0;
+}
+.base-showbox{
+	display: block !important;
+}
+
+.backgroundOne{
+	background: url(../../img/positionChangeContrast/contrastSwipeBg1.png) no-repeat;
+	border-bottom: none;
+	-webkit-background-size:100%;
+	background-size:100%;
+	background-position: 0 bottom;
+	padding-bottom:1px;
+}
+.backgroundTwo{
+	background: url(../../img/positionChangeContrast/contrastSwipeBg2.png) no-repeat;
+	border-bottom: none;
+	-webkit-background-size:100%;
+	background-size:100%;
+	background-position: 0 bottom;
+	padding-bottom:1px;
+}
+.backgroundThree{
+	background: url(../../img/positionChangeContrast/contrastSwipeBg3.png) no-repeat;
+	border-bottom: none;
+	-webkit-background-size:100%;
+	background-size:100%;
+	background-position: 0 bottom;
+	padding-bottom:1px;
+}
+
+//这是404数据页面错误的css
+.base-dataFree{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-color: #fff;
+	z-index: 500;
+	box-sizing: border-box;
+	padding-top: 230/100rem;
+	.base-dataImage{
+		width: 276/100rem;
+		height: 325/100rem;
+		background: url("../../img/帆船2x.png") no-repeat;
+		-webkit-background-size:100%;
+		background-size:100%;
+		margin: 0 auto;
+	}
+	.base-dataTitle{
+		font-size: 30/100rem;
+		color: #2a303e;
+		margin: 30/100rem 0;
+		text-align: center;
+		font-weight: 500;
+	}
+	.base-dataTitles{
+		color: #d7d7d7;
+		text-align: center;
+		font-size: @threetext;
+	}
+	.base-btnRefresh{
+		width: 264/100rem;
+		height: 60/100rem;
+		border: 5/100rem solid #222834;
+		color: #222834;
+		background-color: #fff;
+		display: block;
+		margin: 100/100rem auto;
+	}
+
+}
+//403无数据时出现的样式
+.base-moreData{
+	height: 225/100rem;
+	width: 500/100rem;
+	text-align: center;
+	line-height:225/100rem;
+	font-size: 30/100rem;
+	margin: 0 auto;
+}
+.base-moreData-contrast {
+	height: 2.25rem;
+	width: 5rem;
+	display: none;
+	text-align: center;
+	line-height: 2.25rem;
+	font-size: 0.3rem;
+	margin: 0 auto;
+}
+.columar-area-point{
+	display : none;
+}

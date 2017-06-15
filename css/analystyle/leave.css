@@ -1,0 +1,61 @@
+@import "../commonstyle/base.css";
+@import "../commonstyle/iconfont.css";
+.leave-leave {
+  padding-bottom: 0.3rem;
+}
+.leave-leave .leave-body .leave-round {
+  height: 3.58rem;
+  box-sizing: border-box;
+  padding-top: 0.2rem;
+  margin-bottom: 0.2rem;
+}
+.leave-leave .leave-body .leave-round #leave-ring {
+  width: 4.1rem;
+  height: 3.7rem;
+  float: left;
+}
+.leave-leave .leave-body .leave-round .leave-block {
+  width: 3.25rem;
+  height: 3.16rem;
+  float: left;
+  color: #c4c4c4;
+  font-size: 0.21rem;
+  box-sizing: border-box;
+  padding-top: 0.18rem;
+}
+.leave-leave .leave-body .leave-round .leave-block div {
+  margin-top: 0.4rem;
+  height: 0.3rem;
+  line-height: 0.3rem;
+}
+.leave-leave .leave-body .leave-round .leave-block div span {
+  display: block;
+  float: left;
+  width: 0.3rem;
+  height: 0.3rem;
+  margin-right: 0.15rem;
+  border-radius: 25%;
+}
+.leave-leave .leave-body .leave-round .leave-block .leave-block1 span {
+  background-color: #e66440;
+}
+.leave-leave .leave-body .leave-round .leave-block .leave-block2 span {
+  background-color: #f2883b;
+}
+.leave-leave .leave-body .leave-round .leave-block .leave-block3 span {
+  background-color: #68738c;
+}
+.leave-leave .leave-body .leave-round .leave-block .leave-block4 span {
+  background-color: #3c424f;
+}
+.leave-leave .leave-body .leave-round .leave-block .leave-block5 span {
+  background-color: #68738c;
+}
+.leave-leave .leave-body .leave-round .leave-block .leave-block6 span {
+  background-color: #68738c;
+}
+.leave-leave .leave-body .leave-colum #leave-columnar {
+  width: 6.6rem;
+  height: 5rem;
+  margin: 0 auto;
+}

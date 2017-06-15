@@ -1,0 +1,7 @@
+@import "../commonstyle/base.css";
+@import "../commonstyle/iconfont.css";
+.norm-normIndex .base-bodys .norm-normchart #h-norchart {
+  width: 6.68rem;
+  height: 5rem;
+  margin: 0 auto;
+}
